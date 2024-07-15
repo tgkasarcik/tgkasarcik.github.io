@@ -1,3 +1,5 @@
+var numClicks = 0;
 function buttonClicked() {
-    console.log("hello world!");
+    numClicks++;
+    document.getElementById("p1").innerHTML = "The button has been clicked " + numClicks + " times.";
 }
