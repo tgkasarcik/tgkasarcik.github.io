@@ -5,18 +5,13 @@ function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0, 0);
   canvas.style('z-index', '-1');
+  canvas.style('position', 'fixed');
+  colorMode(HSB, 360);
 }
 
 function draw() {
-  background("aqua");
-  rectMode(CENTER);
+  background(270, 300, 100);
 
-  push();
-  rad += 0.05;
-  translate(windowWidth/2, windowHeight/2);
-  rotate(rad);
-  square(0, 0, 100);
-  pop();
 }
 
 function windowResized() {
