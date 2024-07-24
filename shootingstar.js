@@ -10,7 +10,7 @@ class ShootingStar {
 
     draw() {
         push();
-
+        circle(this.position.x, this.position.y, 10);
         pop();
     }
 }
