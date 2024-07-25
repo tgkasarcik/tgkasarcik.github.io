@@ -61,3 +61,22 @@ body {
   text-align: center;
   font-size: 16px;
 }
+
+
+.title {
+  color: #ffffff;
+  font-size: 48px;
+  padding: 100px 100px;
+  animation: fadeIn 2s;
+}
+
+.welcome {
+  color: #ffffff;
+  padding: 100px 100px;
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
