@@ -47,14 +47,36 @@ body {
 
 .content {
   padding: 16px;
+  color: #ffffff;
 }
 
 .footer {
   background: #986de9;
   color: #f1f1f1;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   width: 100%;
+  height: 40px;
+  padding-top: 5px;
   text-align: center;
   font-size: 16px;
+}
+
+
+.title {
+  color: #ffffff;
+  font-size: 48px;
+  padding: 100px 100px;
+  animation: fadeIn 2s;
+}
+
+.welcome {
+  color: #ffffff;
+  padding: 100px 100px;
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
