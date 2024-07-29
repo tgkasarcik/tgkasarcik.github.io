@@ -3,6 +3,29 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
+main {
+  position: absolute;
+  color: white;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+header {
+  grid-column: 2 / 12;
+  font-size: 48px;
+  padding: 100px 0px;
+}
+
+header h1 {
+  animation: fadeIn 2s;
+}
+
+header p {
+  animation: fadeIn 2s;
+  animation-delay: 2s;
+}
+
 /* Class for sticky navbar using ul component */
 .ul-sticky-navbar {
   list-style-type: none;
