@@ -21,9 +21,19 @@ header h1 {
   animation: fadeIn 2s;
 }
 
-header p {
+header h2 {
+  font-size: 42px;
   animation: fadeIn 2s;
-  animation-delay: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+.intro {
+  grid-column: 2 / 8;
+  font-size: 32px;
+  animation: fadeIn 2s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
 }
 
 /* Class for sticky navbar using ul component */
@@ -87,16 +97,21 @@ header p {
 
 
 .title {
-  color: #ffffff;
+  grid-column: 2 / 12;
   font-size: 48px;
-  padding: 100px 100px;
+  padding: 100px 0px;
+  color: #ffffff;
   animation: fadeIn 2s;
 }
 
 .welcome {
+  grid-column: 2 / 12;
+  font-size: 48px;
+  padding: 100px 0px;
   color: #ffffff;
-  padding: 100px 100px;
-  animation: fadeIn 5s;
+  animation: fadeIn 2s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
 }
 
 @keyframes fadeIn {
