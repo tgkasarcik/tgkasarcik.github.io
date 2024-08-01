@@ -14,12 +14,16 @@ function setup() {
 }
 
 function draw() {
-  background(270, 300, 100);
+  let b = map(window.scrollY, 0, 2000, 100, 150);   //TODO figure out actual document height and replace 2000 with it
+  background(270, 300, b);
   
   for (i = 0; i < stars.length; i++) {
     stars[i].update();
     stars[i].draw();
   }
+
+  // print(window.scrollY);
+  // print(document.body.scrollHeight);
 
 }
 
@@ -32,8 +36,8 @@ function createShootingStars() {
   let direction = createVector(0, -1);
   for (let i = 0; i < 100; i++) {
     let position = createVector(random(0, windowWidth), random(0, windowHeight));
-    let diameter = random(8, 16);
-    let velocity = 1 / diameter * 20;   // Inversely porportional to diamater - smaller move faster, bigger slower
+    let diameter = random(8, 32);
+    let velocity = 1 / diameter * 25;   // Inversely porportional to diamater - smaller move faster, bigger slower
     
 
     stars.push(new ShootingStar(position, direction, velocity, diameter));
