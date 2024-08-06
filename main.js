@@ -22,6 +22,10 @@ function draw() {
     stars[i].draw();
   }
 
+  // Debug
+  // fill(0, 360, 360, 100);
+  // circle(mouseX, mouseY, 200);
+
   // print(window.scrollY);
   // print(document.body.scrollHeight);
 

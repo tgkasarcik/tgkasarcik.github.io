@@ -34,8 +34,8 @@ class ShootingStar {
         push();
         noStroke();
 
-        let h = map(window.scrollY, 0, 2000, 34, 360);      //TODO figure out actual document height and replace 2000 with it
-        fill(h, 155, 324);
+        let s = map(window.scrollY, 0, 2000, 155, 360);      //TODO figure out actual document height and replace 2000 with it
+        fill(34, s, 324);
         circle(this.position.x, this.position.y, this.diameter);
         pop();
     }
