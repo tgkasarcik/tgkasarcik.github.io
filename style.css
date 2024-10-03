@@ -16,6 +16,7 @@ header {
   grid-column: 2 / 12;
   font-size: 48px;
   padding: 100px 0px;
+  text-align: center;
 }
 
 header h1 {
@@ -33,6 +34,20 @@ section {
   grid-column: 2 / 12;
 }
 
+.black {
+  background-color: #986de9;
+  grid-column: 1 / 13;
+}
+
+.white-section {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.full-width-section {
+  grid-column: 1 / 13;
+}
+
 .intro {
   grid-column: 2 / 8;
   font-size: 32px;
@@ -43,6 +58,7 @@ section {
 
 /* Class for sticky navbar using ul component */
 .ul-sticky-navbar {
+  grid-column: 1 / 13;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -89,6 +105,7 @@ section {
 }
 
 .footer {
+  grid-column: 1 / 13;
   background: #986de9;
   color: #f1f1f1;
   /* position: fixed; */

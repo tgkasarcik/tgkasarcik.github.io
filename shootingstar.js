@@ -13,12 +13,12 @@ class ShootingStar {
 
         // Move shooting stars that are close to the mouse toward it
         let distToMouse = dist(this.position.x, this.position.y, mouseX, mouseY);
-        if (distToMouse < 100) {
+        if (distToMouse < 250) {
             let toMouse = createVector(mouseX - this.position.x, mouseY - this.position.y);
             
             // Move toward mouse with velocity inversely porportional to the dist from mouse
             this.position.x += toMouse.x * 1 / distToMouse;
-            this.position.y += toMouse.y * 1 / distToMouse;
+            //this.position.y += toMouse.y * 1 / distToMouse;
 
             print(distToMouse);
         }
