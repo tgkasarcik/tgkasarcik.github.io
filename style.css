@@ -35,6 +35,14 @@ section {
   grid-column: 2 / 12;
 }
 
+.half-section {
+  grid-column: 2 / 7;
+}
+
+.half-section-right {
+  grid-column: 7 / 12;
+}
+
 .black {
   background-color: #986de9;
   grid-column: 1 / 13;
