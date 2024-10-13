@@ -14,8 +14,8 @@ function setup() {
 }
 
 function draw() {
-  let b = map(window.scrollY, 0, 2000, 100, 150);   //TODO figure out actual document height and replace 2000 with it
-  background(270, 300, b);
+  //let b = map(window.scrollY, 0, 2000, 100, 150);   //TODO figure out actual document height and replace 2000 with it
+  background(270, 300, 100);
   
   for (i = 0; i < stars.length; i++) {
     stars[i].update();
@@ -44,7 +44,7 @@ function windowResized() {
 function createShootingStars() {
   // All stars move upward for now
   let direction = createVector(0, -1);
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < 50; i++) {
     let position = createVector(random(0, windowWidth), random(0, windowHeight));
     let diameter = random(8, 16);
     let velocity = 1 / diameter * 25;   // Inversely porportional to diamater - smaller move faster, bigger slower

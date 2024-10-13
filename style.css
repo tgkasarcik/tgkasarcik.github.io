@@ -57,6 +57,26 @@ section {
   grid-column: 1 / 13;
 }
 
+.project-card {
+  width: 20rem;
+  height: 10rem;
+  background-color: #333;
+  color: #ffffff;
+  border-radius: 1rem;
+  
+}
+
+.project-card:hover {
+  scale: 1.05;
+}
+
+.project-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
 .intro {
   grid-column: 2 / 8;
   font-size: 32px;
