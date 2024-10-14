@@ -53,7 +53,7 @@ section {
 .project-card {
   padding: 8px;
   width: 29rem;
-  height: 15rem;
+  height: 17rem;
   background-color: #333;
   color: #ffffff;
   border-width: 8px;
@@ -124,6 +124,7 @@ img {
   color: #ffffff;
   margin-block-start: 0;
   margin-block-end: 0;
+  /* box-sizing: content-box; */
 }
 
 .card-button:hover {
