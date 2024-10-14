@@ -22,7 +22,7 @@ class ShootingStar {
         }
 
         // move to bottom of screen after going off top
-        if (this.position.y <= 0) {
+        if (this.position.y <= 0 - this.diameter) {
             this.position.y = windowHeight;
             this.position.x = random(0, windowWidth);
         }
