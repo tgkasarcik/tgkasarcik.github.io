@@ -118,17 +118,29 @@ img {
   transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
   display: flex;
   flex-direction: row;
-  gap: 4px;
   align-items: center;
+  justify-content: center;
   padding: 4px 8px;
   color: #ffffff;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  /* box-sizing: content-box; */
 }
 
 .card-button:hover {
   background-color: #8432D1;
+}
+
+.play-button {
+  background-color: #29460C;
+}
+
+.play-button:hover {
+  background-color: #7FD132;
+}
+
+.github-logo {
+  width: 48px;
+  height: auto;
+  object-fit: contain;
+  padding: 4px;
 }
 
 .job-title-date {
