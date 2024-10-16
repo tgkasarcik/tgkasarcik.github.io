@@ -116,7 +116,6 @@ img {
   scale: 1.05;
   border-style: solid;
   border-color: #8432D1;
-  /* color: #8432D1; */
 }
 
 .card-info {
@@ -127,9 +126,6 @@ img {
   align-items: center;
   gap: 16px;
   margin-top: auto;
-
-  /*Debugging*/
-  /* color: #000; */
 }
 
 .card-info p {
