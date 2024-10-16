@@ -4,86 +4,142 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Tommy's Portfolio</title>
+        <title>Tommy Kasarcik | Software Developer</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 
         <!-- External Files -->
         <script src="libraries/p5.min.js"></script>
         <script src="libraries/p5.sound.min.js"></script>
         <script src="main.js"></script>
         <script src="shootingstar.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
         <link rel="stylesheet" href="./style.css">
     </head>
 
     <body>
 
         <main>
-            <!-- <div class="title">
-                <h1>Tommy Kasarcik</h1>
-            </div>
-            <div class="welcome">
-                <p>Welcome!</p>
-            </div>  -->
-
             <header>
                 <h1>Tommy Kasarcik</h1>
-                <h2>Welcome!</h2>
+                <h2>Software Developer</h2>
             </header>
 
-            <section class="intro">
-                <p>Check back soon for more info.</p>
-            </section>
-
-            
-
-
+            <div class="body-container">
+                <section class="first-section">
+                    <h2 class="h2-about-me">About Me</h2>
+                    <p>Hi, I'm Tommy!  From a young age, I have always been fascinated by technology.  Now, I am a Software Developer interested in exploring how technology can be used in creative, visually-appealing ways.  Here is some of my favorite work.</p>
+                </section>
+    
+                <section>
+                    <h2>My Projects</h2>
+                    <div class="project-card-container">
+                        <div class="project-card">
+                            <img src="/images/FinalBounty.jpg" class="website-image">
+                            <div class="card-info">
+                                <div>
+                                    <h3>Final Bounty</h3>
+                                    <p>Space exploration and combat game</p>
+                                    <div class="card-tag-cont">
+                                        <div class="card-tag">
+                                            <p>C#</p>
+                                        </div>
+                                        <div class="card-tag">
+                                            <p>Unity</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-button-cont">
+                                    <a href="https://tgkasarcik.github.io/FinalBounty-WebGL/" target="_blank" class="card-button play-button" rel="noopener noreferrer">
+                                        <img src="/images/PlayButton-96x.png" class="card-button-logo">
+                                    </a>
+                                    <a href="https://github.com/tgkasarcik/FinalBounty-Public" target="_blank" class="card-button" rel="noopener noreferrer">
+                                        <img src="/images/github-mark-white.svg" class="card-button-logo">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="/images/MarioScreenshotIce.png" class="website-image">
+                            <div class="card-info">
+                                <div>
+                                    <h3>Super Mario Bros 1.5</h3>
+                                    <p>Modern twist on a classic 2D platformer</p>
+                                    <div class="card-tag-cont">
+                                        <div class="card-tag">
+                                            <p>C#</p>
+                                        </div>
+                                        <div class="card-tag">
+                                            <p>MonoGame</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-button-cont">
+                                    <a href="https://github.com/tgkasarcik/SuperMarioBros1.5" target="_blank" class="card-button" rel="noopener noreferrer">
+                                        <img src="/images/github-mark-white.svg" class="card-button-logo">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="/images/TowerDefense.png" class="website-image">
+                            <div class="card-info">
+                                <div>
+                                    <h3>Tower Defense</h3>
+                                    <p>Turn-based strategy game</p>
+                                    <div class="card-tag-cont">
+                                        <div class="card-tag">
+                                            <p>C#</p>
+                                        </div>
+                                        <div class="card-tag">
+                                            <p>Unity</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-button-cont">
+                                    <a href="https://tgkasarcik.github.io/TowerDefense-WebGL/" target="_blank" class="card-button play-button" rel="noopener noreferrer">
+                                        <img src="/images/PlayButton-96x.png" class="card-button-logo">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+    
+                <section class="last-section">
+                    <h2>Work Experience</h2>
+                    <div class="job-title-date">
+                        <p class="job-title">Student Access Management Analyst</p>
+                        <p>Jun 2022 – May 2023, Aug 2023 – Present</p>
+                    </div>
+                    <p>The Ohio State University, Columbus, OH</p>
+                    <ul>
+                        <li>Administered access to Workday for approximately 100 clients per week to facilitate the smooth operation of university functions including education, research, and healthcare</li>
+                        <li>Organized and directed training sessions for 9 new student employees</li>
+                        <li>Represented team on Big Ten Academic Alliance panel to discuss student data use in higher education</li>
+                        <li>Enforced compliance with data security and audit processes and requirements</li>
+                    </ul>
+    
+                    <div class="job-title-date">
+                        <p class="job-title">Software Developer Intern</p>
+                        <p>May 2023 – Aug 2023</p>
+                    </div>
+                    <p>Ohio Department of Health, Columbus, OH</p>
+                    <ul>
+                        <li>Modernized web application using Blazor, .NET, and Azure Cosmos DB to improve user experience and increase productivity of over 40,000 healthcare professionals across Ohio</li>
+                        <li>Documented and communicated existing system architecture to stakeholders to facilitate system enhancement</li>
+                        <li>Presented completed milestones to stakeholders to demonstrate progress towards goals</li>
+                    </ul>
+                </section>
+                <div class="footer">
+                    <div class="footer-p>
+                        <p">Designed and built by Tommy Kasarcik</p>
+                    </div>
+                    <a href="https://github.com/tgkasarcik/tgkasarcik.github.io" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/github-mark-white.svg" class="card-button-logo">
+                    </a>
+                </div>
+            </div>
         </main>
-
-        <!-- <div class="title">
-            <h3>Tommy Kasarcik</h3>
-        </div>
-
-        <div class="welcome">
-            <h2>Welcome.  Check back soon for more information.</h2>
-        </div> -->
-        
-
-
-        <!-- <div class="header">
-            <h2>Tommy's Portfolio</h2>
-        </div>
-
-        <ul class="ul-sticky-navbar">
-            <li class="li-navbar"><a class="a-navbar a-navbar-active" href="index.html">Home</a></li>
-            <li class="li-navbar"><a class="a-navbar" href="education.html">Education</a></li>
-            <li class="li-navbar"><a class="a-navbar" href="index.html">Software Development</a></li>
-            <li class="li-navbar"><a class="a-navbar" href="index.html">3D Modeling</a></li>
-            <li class="li-navbar"><a class="a-navbar" href="index.html">Music</a></li>
-        </ul> -->
-
-
-        <!-- <div class="content">
-            <h3>On Scroll Sticky Header</h3>
-            <p>The header will stick to the top when you reach its scroll position.</p>
-            <p>Scroll back up to remove the sticky effect.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p><p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-        </div> -->
-
-        <!-- <div class="footer">
-            <p>&copy; 2024 Tommy Kasarcik</p>
-        </div> -->
     </body>
 </html>

@@ -1,20 +1,30 @@
 body {
   margin: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  padding: 0;
+  color: #ffffff;
+  font-family: 'Inter';
+  font-size: 100%;
 }
 
 main {
   position: absolute;
-  color: white;
-
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  top: 0;
+  left: 0;
+  bottom :0;
+  right: 0;
+  height :100%;
+  width :100%;
 }
 
 header {
-  grid-column: 2 / 12;
-  font-size: 48px;
+  font-size: 275%;
   padding: 100px 0px;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 header h1 {
@@ -22,99 +32,189 @@ header h1 {
 }
 
 header h2 {
-  font-size: 42px;
+  font-size: 100%;
   animation: fadeIn 2s;
   animation-delay: 1s;
   animation-fill-mode: both;
 }
 
-.intro {
-  grid-column: 2 / 8;
-  font-size: 32px;
-  animation: fadeIn 2s;
-  animation-delay: 3s;
-  animation-fill-mode: both;
+.body-container {
+  width: 100%;
+  background-color: #ffffff;
+  color: #000;
 }
 
-/* Class for sticky navbar using ul component */
-.ul-sticky-navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.body-container h2 {
+  padding: 1% 0%;
+  font-size: 200%;
+  color: #290C46;
+}
+
+.body-container p, li {
+  margin: 0.5% 0%;
+  font-size: 135%;
+}
+
+section {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.first-section {
+  padding-top: 1%;
+}
+
+.last-section {
+  margin-bottom: 4%;
+}
+
+.project-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+.project-card {
+  padding: 8px;
+  width: 29rem;
+  height: 18rem;
   background-color: #333;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-}
-
-/* Class for li element in sticky navbar */
-.li-navbar {
-  float: left;
-}
-
-/* Class for a element in sticky navbar */
-.a-navbar {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Hover behavior for a element in sticky navbar */
-.a-navbar:hover:not(.active) {
-  background-color: #111;
-}
-
-/* Selected class for a element in sticky navbar */
-.a-navbar-active {
-  background-color: #3a03f1;
-}
-
-.header {
-  padding: 10px 16px;
-  background: #986de9;
-  color: #f1f1f1;
-}
-
-.content {
-  padding: 16px;
   color: #ffffff;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #290C46;
+  border-radius: 1rem;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+}
+
+@media screen and (max-width: 950px) {
+  .website-image {
+      height: auto;
+  }
+}
+
+.website-image {
+  border-radius: 5px;
+  width: 100%;
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.project-card:hover {
+  scale: 1.05;
+  border-style: solid;
+  border-color: #8432D1;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-top: auto;
+}
+
+.card-info p {
+  font-size: 95%;
+  margin: 2px 0px;
+}
+
+.card-info h3 {
+  margin: 0;
+}
+
+.card-tag-cont {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.card-tag {
+  padding: 2px;
+  background-color: #8432D1;
+  border-radius: 20px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.card-button-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-button {
+  background-color: #290C46;
+  border-radius: 4px;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  color: #ffffff;
+}
+
+.card-button:hover {
+  background-color: #8432D1;
+}
+
+.play-button {
+  background-color: #29460C;
+}
+
+.play-button:hover {
+  background-color: #7FD132;
+}
+
+.card-button-logo {
+  width: 48px;
+  height: auto;
+  object-fit: contain;
+  padding: 4px;
+}
+
+.job-title-date {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.job-title {
+  font-weight: bold;
+}
+
+.job-title-date p {
+  margin-block-end: 0px;
 }
 
 .footer {
-  background: #986de9;
-  color: #f1f1f1;
-  /* position: fixed; */
+  background: #333;
+  color: #ffffff;
   bottom: 0;
   width: 100%;
-  height: 40px;
-  padding-top: 5px;
   text-align: center;
-  font-size: 16px;
+  padding: 24px 0px;
 }
 
-
-.title {
-  grid-column: 2 / 12;
-  font-size: 48px;
-  padding: 100px 0px;
-  color: #ffffff;
-  animation: fadeIn 2s;
-}
-
-.welcome {
-  grid-column: 2 / 12;
-  font-size: 48px;
-  padding: 100px 0px;
-  color: #ffffff;
-  animation: fadeIn 2s;
-  animation-delay: 1s;
-  animation-fill-mode: both;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+.footer-p {
+  justify-self: center;
+  font-size: 50%;
 }

@@ -1,10 +1,5 @@
-Potential Projects to Include:
-- Any 3541 Unity Labs
-- Systems 1 (Spring 2022) Labs
-- Systems 2 Labs
-- RT Rendering Projects
-- 3341 Projects
-- ACCAD 5002 Animation
-- Select p5 Projects
-- Data Vis. Final Project??
-- Art 3101 3D Modelling Renders??
+# Tommy Kasarcik's Personal Portfolio Website
+
+This website is intended to be a portfolio of the projects I have created that I am the most proud of.  I intend this site to grow and change as I create more projects and develop more skills.
+
+This version of the website is created from raw HTML, CSS, and JavaScript code.  The background animation is created using the p5.js library from https://p5js.org/
