@@ -12,6 +12,8 @@ function setup() {
   createShootingStars();
 }
 
+//comment for testing
+
 function draw() {
   background(270, 300, 100);
   
