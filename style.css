@@ -4,6 +4,10 @@ body {
   color: #ffffff;
   font-family: 'Inter';
   font-size: 100%;
+
+  @media screen and (max-width: 1150px) {
+    font-size: 80%;
+  } 
 }
 
 main {
@@ -60,8 +64,8 @@ section {
   max-width: 60rem;
 
   @media screen and (max-width: 1150px) {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
   } 
 }
 
